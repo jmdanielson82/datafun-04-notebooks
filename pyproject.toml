@@ -159,6 +159,12 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
+[dependency-groups]
+dev = [
+    "ipykernel>=7.1.0",
+    "jupyter>=1.1.1",
+]
+
 [tool.setuptools]
 include-package-data = true # WHY: Ensure non-code files are included in distributions.
 package-dir = {"" = "src"} # WHY: src-layout keeps code separate from config and docs.
